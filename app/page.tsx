@@ -1,5 +1,5 @@
-import { Treemap } from './gh/treemap'
-import { data } from './gh/data'
+import { Treemap } from './d3/treemap'
+import { data } from './d3/data'
 
 export default function Home() {
   return (

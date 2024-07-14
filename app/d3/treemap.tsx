@@ -120,7 +120,10 @@ export const Treemap = ({ data }: { data: any }) => {
   useEffect(() => {
     if (ref.current) {
       ref.current.appendChild(
-        Object.assign((svg as any).node(), { scales: { color }, ref: { ref } })
+        Object.assign((svg as any).node(), {
+          scales: { color },
+          ref: { ref }
+        })
       )
     }
   }, [])

@@ -31,7 +31,6 @@ export const fetchPullRequests = async (
 }
 
 export const fetchCommits = async (
-  gh_token: string,
   owner: string,
   repo: string,
   page: number = 1,
@@ -58,7 +57,7 @@ export const fetchCommits = async (
     // Fetch file details for each commit
     for (const commit of commits) {
       const commitDetailsRes = await fetch(
-        `https://api.github.com/repos/${OWNER}/${REPO}/commits/${commit.sha}`,
+        `https://api.github.com/repos/${owner}/${repo}/commits/${commit.sha}`,
         {
           headers: {
             Authorization: `Bearer ${process.env.GITHUB_TOKEN}`

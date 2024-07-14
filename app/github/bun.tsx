@@ -1,5 +1,5 @@
 import CommitCard from './commit-card'
-import { fetchCommits, fetchPullRequests } from './github'
+import { fetchCommits, fetchPullRequests } from './query'
 import { Commit, PullRequest } from './types'
 
 const OWNER = 'oven-sh'
