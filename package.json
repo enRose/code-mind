@@ -11,6 +11,7 @@
   "dependencies": {
     "@nextui-org/avatar": "^0.0.0-canary-20240708000658",
     "@nextui-org/react": "^2.4.2",
+    "@observablehq/stdlib": "^5.8.7",
     "d3": "^7.9.0",
     "framer-motion": "^11.2.13",
     "next": "^15.0.0-rc.0",

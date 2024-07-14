@@ -15,3 +15,16 @@ export interface Commit {
     status: string
   }>
 }
+
+export interface PullRequest {
+  id: number
+  title: string
+  user: {
+    login: string
+  }
+  state: string
+  created_at: string
+  updated_at: string
+  closed_at: string | null
+  merged_at: string | null
+}
